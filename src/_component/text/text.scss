@@ -1,0 +1,38 @@
+.text {
+  &__title {
+    font-size: 24px;
+  }
+
+  &__sub-title {
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  &__section-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    width: 100%;
+  }
+
+  &__info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+
+    align-items: center;
+  }
+
+  &__descriere {
+    display: flex;
+    width: 100%;
+  }
+
+  &__gap-8 {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    flex-direction: column;
+  }
+}
