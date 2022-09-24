@@ -1,0 +1,36 @@
+%refolosibil {
+  color: white;
+
+  border-radius: 20px;
+  height: 35px;
+  line-height: 19px;
+  border: 0;
+
+  padding: 8px 16px;
+
+  display: flex;
+  gap: 8px;
+}
+
+.buton {
+  &__normal {
+    &--rosu {
+      @extend %refolosibil;
+
+      background-color: #c62a08;
+    }
+
+    &--verde {
+      @extend %refolosibil;
+
+      background-color: #046b2d;
+    }
+  }
+}
+
+.orice {
+  width: 16px;
+  height: 16px;
+  background-color: palegoldenrod;
+  border-radius: 50%;
+}
