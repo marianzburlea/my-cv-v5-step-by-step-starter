@@ -31,6 +31,16 @@
 .orice {
   width: 16px;
   height: 16px;
-  background-color: palegoldenrod;
+  // background-color: palegoldenrod;
   border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

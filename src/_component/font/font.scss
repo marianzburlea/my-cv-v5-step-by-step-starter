@@ -1,0 +1,101 @@
+@import "variable";
+
+@font-face {
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?tbo2wj")
+      format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?tbo2wj")
+      format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?tbo2wj##{$icomoon-font-family}")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="cv-"],
+[class*=" cv-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "#{$icomoon-font-family}" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cv-cup-half {
+  &:before {
+    content: $cv-cup-half;
+  }
+}
+.cv-medal {
+  &:before {
+    content: $cv-medal;
+  }
+}
+.cv-trophy-2 {
+  &:before {
+    content: $cv-trophy-2;
+  }
+}
+.cv-trophy-1 {
+  &:before {
+    content: $cv-trophy-1;
+  }
+}
+.cv-trophy-3 {
+  &:before {
+    content: $cv-trophy-3;
+  }
+}
+.cv-cup-full {
+  &:before {
+    content: $cv-cup-full;
+  }
+}
+.cv-piggy-bank {
+  &:before {
+    content: $cv-piggy-bank;
+  }
+}
+.cv-arrow-down {
+  &:before {
+    content: $cv-arrow-down;
+  }
+}
+.cv-email {
+  &:before {
+    content: $cv-email;
+  }
+}
+.cv-github {
+  &:before {
+    content: $cv-github;
+  }
+}
+.cv-cross {
+  &:before {
+    content: $cv-cross;
+  }
+}
+.cv-menu {
+  &:before {
+    content: $cv-menu;
+  }
+}
+.cv-home {
+  &:before {
+    content: $cv-home;
+  }
+}
+.cv-youtube {
+  &:before {
+    content: $cv-youtube;
+  }
+}
