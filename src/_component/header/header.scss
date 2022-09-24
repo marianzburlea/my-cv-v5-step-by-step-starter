@@ -1,0 +1,23 @@
+.header {
+  cursor: pointer;
+
+  &__camasa {
+    height: 40px;
+    background-color: rgba(204, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    background-color: rgba(204, 0, 0, 1);
+    width: 304px;
+    color: white;
+    font-size: 24px;
+    padding: 8px;
+    line-height: 24px;
+
+    display: flex;
+    justify-content: center;
+  }
+}
