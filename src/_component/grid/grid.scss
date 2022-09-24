@@ -1,0 +1,75 @@
+// mobil
+.grid {
+  display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem; // 16px
+  width: 304px;
+
+  &__row {
+    &-1 {
+      grid-column: span 1;
+      height: 2rem;
+      background-color: indigo;
+    }
+
+    &-2 {
+      grid-column: span 2;
+      height: 2rem;
+      background-color: darkblue;
+    }
+
+    &-3 {
+      height: 2rem;
+      background-color: aquamarine;
+      grid-column: span 3;
+    }
+
+    &-4 {
+      height: 2rem;
+      background-color: khaki;
+      grid-column: span 4;
+    }
+
+    &-12 {
+      height: 2rem;
+      background-color: green;
+      grid-column: span 4;
+    }
+
+    &-full {
+      height: 2rem;
+      grid-column: 1/-1;
+      background-color: red;
+    }
+  }
+
+  // am mai si eu greseala asta de doua ori
+  // media se scrie aici, in react Mariane
+}
+
+// tableta
+@media screen and (min-width: 1024px) {
+  .grid {
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 768px;
+    grid-template-columns: repeat(8, 1fr);
+
+    // &__row-special {
+    //   grid-column: span 8;
+    // }
+  }
+}
+
+// desktop
+@media screen and (min-width: 1440px) {
+  .grid {
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 1200px;
+    grid-template-columns: repeat(12, 1fr);
+
+    // &__row-special {
+    //   grid-column: span 12;
+    // }
+  }
+}
